@@ -19,7 +19,9 @@ const UserSearch = () => {
 
   const onclick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    const foundUser = users.find((user) => user.name === name);
+    const foundUser = users.find(
+      (user) => user.name.toLowerCase() === name.toLowerCase(),
+    );
     setUser(foundUser);
   };
 

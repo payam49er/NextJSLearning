@@ -39,7 +39,7 @@ const ReducerHook = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div>
       <form>
         <h1 className="font-bold pb-2 mb-3">State Hook</h1>
         <h2 className="font-bold pb-10">{state.count}</h2>
